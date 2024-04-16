@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number Validator</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <style>
+        
+        .video-background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            z-index: -1; 
+        }
+
+        
+        video {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        
+        main {
+            position: relative;
+            z-index: 1; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="video-background-container">
+            
+            <video autoplay loop muted>
+                <source src="images/7955-205810628.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="logo-heading">
+            <a href="#" title="Reload Page">
+                <img src="images/pixel-logo-removebg-preview.png" alt="phonelogo">
+            </a>
+            <h1>Telephone Number Validator</h1>
+        </div>
+        <div class="phone-container">
+            <label for="user-input">Enter a Phone Number :</label>
+            <input id="user-input" type="tel" placeholder="Type here" required>
+            <div id="results-div"></div>
+            <div class="phone-footer">
+                <button class="glow-on-hover" id="check-btn">Check</button>
+                <button class="glow-on-hover" id="clear-btn">Clear</button>
+            </div> 
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
